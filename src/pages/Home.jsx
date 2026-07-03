@@ -216,7 +216,7 @@ export default function Home() {
                       Est. 2024
                     </span>
                     <span className="font-dmsans text-[#9A8880] text-[12px] leading-relaxed">
-                      India's Premium<br/>Wedding Platform
+                      India's Premium<br/>Event Management Platform
                     </span>
                   </div>
                 </div>
@@ -224,11 +224,11 @@ export default function Home() {
 
               <h1 className={`mb-6 font-cormorant text-[44px] font-light leading-[1.1] transition-all delay-300 duration-700 sm:text-[52px] md:text-[64px] lg:text-[72px] ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
                 Find Your <em className="text-gold">Perfect</em>
-                <br />Wedding Vendors
+                <br />Vendors
               </h1>
 
               <p className={`mb-8 max-w-lg font-dmsans text-base leading-relaxed text-muted transition-all delay-500 duration-700 sm:mb-10 sm:text-lg ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
-                OneDestiny connects couples with India's finest photographers, decorators, caterers & more &mdash; all in one elegant app.
+                OneDestiny connects you with India's finest event management vendors &mdash; photographers, decorators, caterers & more &mdash; all in one elegant app.
               </p>
 
               <div className={`mb-8 flex flex-wrap gap-3 transition-all delay-700 duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>

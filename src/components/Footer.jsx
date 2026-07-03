@@ -65,8 +65,8 @@ export default function Footer() {
 
               {/* Tagline */}
               <p className="font-dmsans text-[#9A8880] text-sm leading-relaxed max-w-[220px]">
-                India's premium wedding vendor booking platform.
-                Your dream wedding starts with the right team.
+                India's premium event management & wedding vendor booking platform.
+                Your dream event starts with the right team.
               </p>
 
               {/* Instagram */}
@@ -183,7 +183,7 @@ export default function Footer() {
       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       <div className="container flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
         <p className="font-dmsans text-xs text-muted">
-          &copy; 2025 OneDestiny. All rights reserved.
+          &copy; 2025 OneDestiny. All rights reserved. | Founded by Karnakanti Nithish &amp; Balla Dharmateja
         </p>
         <div className="flex flex-wrap items-center justify-center gap-6">
           <a href="#" className="font-dmsans text-xs text-muted transition-colors hover:text-gold-light">
