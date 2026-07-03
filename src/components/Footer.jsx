@@ -167,7 +167,10 @@ export default function Footer() {
       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       <div className="container flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
         <p className="font-dmsans text-xs text-muted">
-          &copy; 2025 OneDestiny. All rights reserved.
+          &copy; 2026 OneDestiny. All rights reserved.
+        </p>
+        <p className="font-dmsans text-xs text-muted">
+          GST No. 36KZKPK9734E1ZS
         </p>
         <div className="flex flex-wrap items-center justify-center gap-6">
           <a href="#" className="font-dmsans text-xs text-muted transition-colors hover:text-gold-light">

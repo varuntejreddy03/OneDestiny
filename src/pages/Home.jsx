@@ -41,29 +41,12 @@ const steps = [
 
 const features = [
   { icon: ShieldCheck, title: 'Verified Vendors', desc: 'Every vendor is background-checked and quality-verified before listing.', className: 'lg:min-h-[210px]' },
-  { icon: CalendarCheck, title: 'Easy Booking', desc: 'Book and manage all your wedding vendors in one unified platform.', className: 'lg:min-h-[250px]' },
-  { icon: Star, title: 'Reviews & Ratings', desc: 'Honest reviews from real couples help you make the right choice.', className: 'lg:min-h-[210px]' },
+  { icon: CalendarCheck, title: 'Easy Booking', desc: 'Book and manage all your event vendors in one unified platform.', className: 'lg:min-h-[250px]' },
+  { icon: Star, title: 'Reviews & Ratings', desc: 'Honest reviews from real customers help you make the right choice.', className: 'lg:min-h-[210px]' },
   { icon: MessageCircle, title: 'Direct Contact', desc: 'Chat directly with vendors to discuss requirements and negotiate.', className: 'lg:min-h-[230px]' },
   { icon: Lock, title: 'Secure Payments', desc: 'Protected payments via Razorpay with clear booking records.', className: 'lg:min-h-[230px] lg:col-start-2' },
 ]
 
-const testimonials = [
-  {
-    quote: 'OneDestiny made our wedding planning feel effortless. We found our photographer, decorator and caterer all within a week.',
-    name: 'Priya & Rahul',
-    location: 'Hyderabad',
-  },
-  {
-    quote: 'The quality of vendors on this platform is unmatched. Our mehendi artist was absolutely phenomenal, all thanks to OneDestiny.',
-    name: 'Ananya & Vikram',
-    location: 'Mumbai',
-  },
-  {
-    quote: 'We were planning a destination wedding and OneDestiny connected us with the best venues in Udaipur. Truly a lifesaver.',
-    name: 'Sneha & Arjun',
-    location: 'Delhi',
-  },
-]
 
 function Particles() {
   const particles = useMemo(
@@ -303,7 +286,7 @@ export default function Home() {
               App Features
             </span>
             <h2 className="font-cormorant text-3xl font-light sm:text-4xl md:text-5xl">
-              Why Couples Love OneDestiny
+              Why Choose OneDestiny
             </h2>
           </AnimatedSection>
 
