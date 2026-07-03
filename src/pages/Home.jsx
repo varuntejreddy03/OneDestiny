@@ -199,6 +199,10 @@ export default function Home() {
                   <CalendarCheck size={16} className="text-gold" />
                   Launching 27 July 2026
                 </span>
+                <span className="inline-flex items-center gap-2 rounded-lg border border-maroon/40 bg-maroon/10 px-4 py-2">
+                  <Sparkles size={16} className="text-gold" />
+                  Vendor Registration Opens 27 July 2026
+                </span>
               </div>
             </div>
 
