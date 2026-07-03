@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import GoldButton from './GoldButton'
-import logoIcon from '../assets/logo-icon.png'
+import logoIcon from '../assets/logo-full.png'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -15,8 +14,7 @@ const navLinks = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
-  const { pathname, hash } = useLocation()
-  const navigate = useNavigate()
+  const { pathname } = useLocation()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 80)
@@ -31,57 +29,26 @@ export default function Navbar() {
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? 'hidden' : ''
-    return () => {
-      document.body.style.overflow = ''
-    }
+    return () => { document.body.style.overflow = '' }
   }, [mobileOpen])
-
-  useEffect(() => {
-    if (pathname !== '/' || hash !== '#app-download') return
-
-    const timeout = window.setTimeout(() => {
-      document.getElementById('app-download')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-    }, 80)
-
-    return () => window.clearTimeout(timeout)
-  }, [hash, pathname])
-
-  const handleDownloadClick = () => {
-    setMobileOpen(false)
-
-    if (pathname === '/') {
-      document.getElementById('app-download')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      return
-    }
-
-    navigate('/#app-download')
-  }
 
   return (
     <>
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? 'navbar-glass py-3' : 'py-5 bg-transparent'
+          scrolled ? 'navbar-glass py-2' : 'py-4 bg-transparent'
         }`}
       >
         <div className="container flex items-center justify-between gap-4">
-          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
-            <div className="relative">
-              <img
-                src={logoIcon}
-                alt="OneDestiny"
-                className="w-10 h-10 object-contain
-                 drop-shadow-[0_0_8px_rgba(201,168,76,0.5)]
-                 group-hover:drop-shadow-[0_0_14px_rgba(201,168,76,0.8)]
-                 transition-all duration-300
-                 group-hover:scale-105"
-              />
-            </div>
-            <span className="font-cinzel text-[#C9A84C] text-[17px] 
-                   tracking-[0.08em] hidden sm:block
-                   group-hover:text-[#E8C96A] transition-colors duration-300">
-              OneDestiny
-            </span>
+          <Link to="/" className="group flex-shrink-0">
+            <img
+              src={logoIcon}
+              alt="OneDestiny"
+              className="h-[64px] w-auto object-contain
+               drop-shadow-[0_0_10px_rgba(201,168,76,0.5)]
+               group-hover:drop-shadow-[0_0_16px_rgba(201,168,76,0.8)]
+               transition-all duration-300 group-hover:scale-105"
+            />
           </Link>
 
           <div className="hidden lg:flex items-center gap-8">
@@ -102,7 +69,7 @@ export default function Navbar() {
 
           <div className="hidden lg:block">
             <span className="font-cinzel text-[11px] tracking-[0.1em] uppercase text-gold border border-gold/30 rounded-lg px-4 py-2">
-              Launching 27 Jul 2025
+              Launching 27 Jul 2026
             </span>
           </div>
 
@@ -127,23 +94,13 @@ export default function Navbar() {
             <X size={28} />
           </button>
 
-          <Link to="/" className="mb-8 flex items-center gap-3 group flex-shrink-0">
-            <div className="relative">
-              <img
-                src={logoIcon}
-                alt="OneDestiny"
-                className="w-10 h-10 object-contain
-                 drop-shadow-[0_0_8px_rgba(201,168,76,0.5)]
-                 group-hover:drop-shadow-[0_0_14px_rgba(201,168,76,0.8)]
-                 transition-all duration-300
-                 group-hover:scale-105"
-              />
-            </div>
-            <span className="font-cinzel text-[#C9A84C] text-[17px] 
-                   tracking-[0.08em] hidden sm:block
-                   group-hover:text-[#E8C96A] transition-colors duration-300">
-              OneDestiny
-            </span>
+          <Link to="/" className="mb-8 group">
+            <img
+              src={logoIcon}
+              alt="OneDestiny"
+              className="h-[60px] w-auto object-contain
+               drop-shadow-[0_0_10px_rgba(201,168,76,0.5)]"
+            />
           </Link>
 
           {navLinks.map(({ to, label }) => (
@@ -161,7 +118,7 @@ export default function Navbar() {
 
           <div className="mt-8">
             <span className="font-cinzel text-sm tracking-[0.1em] uppercase text-gold border border-gold/30 rounded-lg px-5 py-3 inline-block">
-              Launching 27 Jul 2025
+              Launching 27 Jul 2026
             </span>
           </div>
         </div>

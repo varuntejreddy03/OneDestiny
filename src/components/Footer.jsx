@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import logoFull from '../assets/logo-full.png'
 
 const quickLinks = [
@@ -86,7 +86,7 @@ export default function Footer() {
               <div className="flex items-center gap-2 border border-[#C9A84C]/30 
                   rounded-lg px-4 py-3">
                 <span className="font-cinzel text-[11px] text-[#C9A84C] tracking-[0.1em] uppercase">
-                  App Launching 27 Jul 2025
+                  App Launching 27 Jul 2026
                 </span>
               </div>
             </div>
@@ -140,17 +140,14 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:karnakantinithish6@gmail.com"
+                  href="mailto:onedestiny50@gmail.com"
                   className="flex items-start gap-2 font-dmsans text-sm text-muted transition-colors hover:text-gold-light"
                 >
                   <Mail size={15} className="mt-0.5 text-gold" />
-                  <span className="break-all">karnakantinithish6@gmail.com</span>
+                  <span className="break-all">onedestiny50@gmail.com</span>
                 </a>
               </li>
-              <li className="flex items-start gap-2 font-dmsans text-sm text-muted">
-                <MapPin size={15} className="mt-0.5 flex-shrink-0 text-gold" />
-                <span>1-3-102 Padmashali Street, Karimnagar, Telangana 505001</span>
-              </li>
+
             </ul>
           </div>
         </div>
@@ -159,7 +156,7 @@ export default function Footer() {
       <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
       <div className="container flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
         <p className="font-dmsans text-xs text-muted">
-          &copy; 2025 OneDestiny. All rights reserved. | Founded by Karnakanti Nithish &amp; Balla Dharmateja
+          &copy; 2025 OneDestiny. All rights reserved. | Founded by <span className="text-gold">Karnakanti Nithish</span> &amp; <span className="text-gold">Balla Dharmateja</span>
         </p>
         <div className="flex flex-wrap items-center justify-center gap-6">
           <a href="#" className="font-dmsans text-xs text-muted transition-colors hover:text-gold-light">

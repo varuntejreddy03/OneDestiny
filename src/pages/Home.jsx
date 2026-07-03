@@ -187,7 +187,7 @@ export default function Home() {
                   <div className="flex flex-col gap-1">
                     <span className="font-cinzel text-[#C9A84C] text-[11px] 
                      tracking-[0.2em] uppercase">
-                      Est. 2024
+                      Est. 2026
                     </span>
                     <span className="font-dmsans text-[#9A8880] text-[12px] leading-relaxed">
                       India's Premium<br/>Event Management Platform
@@ -198,7 +198,7 @@ export default function Home() {
 
               <h1 className={`mb-6 font-cormorant text-[44px] font-light leading-[1.1] transition-all delay-300 duration-700 sm:text-[52px] md:text-[64px] lg:text-[72px] ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
                 Find Your <em className="text-gold">Perfect</em>
-                <br />Vendors
+                <br />Event Vendors
               </h1>
 
               <p className={`mb-8 max-w-lg font-dmsans text-base leading-relaxed text-muted transition-all delay-500 duration-700 sm:mb-10 sm:text-lg ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
@@ -214,7 +214,7 @@ export default function Home() {
               <div className={`flex flex-wrap items-center gap-3 font-dmsans text-[14px] text-gold transition-all delay-[850ms] duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
                 <span className="inline-flex items-center gap-2 rounded-lg border border-gold/30 bg-surface-2/60 px-4 py-2">
                   <CalendarCheck size={16} className="text-gold" />
-                  Launching 27 July 2025
+                  Launching 27 July 2026
                 </span>
               </div>
             </div>
@@ -323,33 +323,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="angled-section bg-bg py-16 lg:py-24">
-        <div className="container">
-          <AnimatedSection className="mb-10 text-center sm:mb-16">
-            <h2 className="font-cormorant text-3xl font-light italic sm:text-4xl md:text-5xl">
-              Stories of Love & Trust
-            </h2>
-            <hr className="gold-rule-wide mx-auto mt-6" />
-          </AnimatedSection>
 
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
-            {testimonials.map((t, i) => (
-              <AnimatedSection key={t.name} delay={i * 150}>
-                <div className="testimonial-card h-full">
-                  <span className="absolute left-6 top-4 font-cormorant text-6xl text-gold/20">&ldquo;</span>
-                  <p className="mb-6 mt-6 font-cormorant text-base italic leading-relaxed text-text-primary/90 sm:text-lg">
-                    {t.quote}
-                  </p>
-                  <div>
-                    <p className="font-dmsans text-sm font-medium text-text-primary">{t.name}</p>
-                    <p className="font-dmsans text-xs text-muted">{t.location}</p>
-                  </div>
-                </div>
-              </AnimatedSection>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section
         id="app-download"
@@ -365,7 +339,7 @@ export default function Home() {
               Coming Soon
             </span>
             <h2 className="mb-6 font-cormorant text-3xl font-light sm:text-4xl md:text-5xl">
-              Launching 27 July 2025
+              Launching 27 July 2026
             </h2>
             <p className="mx-auto mb-8 max-w-lg font-dmsans text-muted sm:mb-10">
               We're building something special. OneDestiny will be available on App Store & Google Play soon.
