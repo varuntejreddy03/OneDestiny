@@ -101,9 +101,9 @@ export default function Navbar() {
           </div>
 
           <div className="hidden lg:block">
-            <GoldButton variant="filled" size="sm" onClick={handleDownloadClick}>
-              Download App
-            </GoldButton>
+            <span className="font-cinzel text-[11px] tracking-[0.1em] uppercase text-gold border border-gold/30 rounded-lg px-4 py-2">
+              Launching 27 Jul 2025
+            </span>
           </div>
 
           <button
@@ -160,9 +160,9 @@ export default function Navbar() {
           ))}
 
           <div className="mt-8">
-            <GoldButton variant="filled" size="md" onClick={handleDownloadClick}>
-              Download App
-            </GoldButton>
+            <span className="font-cinzel text-sm tracking-[0.1em] uppercase text-gold border border-gold/30 rounded-lg px-5 py-3 inline-block">
+              Launching 27 Jul 2025
+            </span>
           </div>
         </div>
       )}

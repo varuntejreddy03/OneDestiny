@@ -5,17 +5,14 @@ import {
   Building2,
   CalendarCheck,
   Camera,
-  Car,
   Flower2,
   Lock,
   MessageCircle,
   Music,
   Palette,
-  Play,
   ShieldCheck,
   Sparkles,
   Star,
-  Smartphone,
   Sun,
   UtensilsCrossed,
   Video,
@@ -34,7 +31,6 @@ const categories = [
   { icon: Sun, name: 'Pandits' },
   { icon: Palette, name: 'Mehendi Artists' },
   { icon: Music, name: 'DJ & Music' },
-  { icon: Car, name: 'Wedding Cars' },
 ]
 
 const steps = [
@@ -150,28 +146,6 @@ function PhoneMockup() {
   )
 }
 
-function StoreBadge({ type }) {
-  const isApple = type === 'apple'
-  const Icon = isApple ? Smartphone : Play
-
-  return (
-    <a
-      href="#app-download"
-      className="inline-flex min-w-[170px] items-center gap-3 rounded-lg border border-border-custom bg-bg/80 px-5 py-3 text-left transition-colors hover:border-gold/40"
-    >
-      <Icon size={22} className="text-gold" />
-      <span>
-        <span className="block font-dmsans text-[10px] uppercase leading-none text-muted">
-          {isApple ? 'Download on the' : 'Get it on'}
-        </span>
-        <span className="block font-dmsans text-sm font-medium leading-tight text-text-primary">
-          {isApple ? 'App Store' : 'Google Play'}
-        </span>
-      </span>
-    </a>
-  )
-}
-
 export default function Home() {
   const [mounted, setMounted] = useState(false)
 
@@ -232,23 +206,16 @@ export default function Home() {
               </p>
 
               <div className={`mb-8 flex flex-wrap gap-3 transition-all delay-700 duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
-                <GoldButton variant="filled" size="lg" href="#app-download">
-                  Download App
-                </GoldButton>
                 <GoldButton variant="outlined" size="lg" to="/for-vendors">
                   Become a Vendor <ArrowRight size={14} />
                 </GoldButton>
               </div>
 
-              <div className={`flex flex-wrap items-center gap-3 font-dmsans text-[13px] text-muted transition-all delay-[850ms] duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
-                <span className="inline-flex items-center gap-1">
-                  <Star size={14} className="fill-gold text-gold" />
-                  4.8 Rating
+              <div className={`flex flex-wrap items-center gap-3 font-dmsans text-[14px] text-gold transition-all delay-[850ms] duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
+                <span className="inline-flex items-center gap-2 rounded-lg border border-gold/30 bg-surface-2/60 px-4 py-2">
+                  <CalendarCheck size={16} className="text-gold" />
+                  Launching 27 July 2025
                 </span>
-                <span className="text-border-custom">&bull;</span>
-                <span>500+ Vendors</span>
-                <span className="text-border-custom">&bull;</span>
-                <span>10,000+ Happy Couples</span>
               </div>
             </div>
 
@@ -394,16 +361,18 @@ export default function Home() {
 
         <div className="container relative z-10 text-center">
           <AnimatedSection>
+            <span className="mb-4 block font-cinzel text-[11px] uppercase tracking-[0.2em] text-gold">
+              Coming Soon
+            </span>
             <h2 className="mb-6 font-cormorant text-3xl font-light sm:text-4xl md:text-5xl">
-              Your Dream Wedding Starts Here
+              Launching 27 July 2025
             </h2>
             <p className="mx-auto mb-8 max-w-lg font-dmsans text-muted sm:mb-10">
-              Download OneDestiny today and discover the easiest way to plan your perfect Indian wedding.
+              We're building something special. OneDestiny will be available on App Store & Google Play soon.
             </p>
-            <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <StoreBadge type="apple" />
-              <StoreBadge type="play" />
-            </div>
+            <GoldButton variant="outlined" size="lg" to="/contact">
+              Get Notified <ArrowRight size={14} />
+            </GoldButton>
           </AnimatedSection>
         </div>
       </section>

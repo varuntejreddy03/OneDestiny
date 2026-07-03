@@ -82,36 +82,12 @@ export default function Footer() {
                 @1onedestiny
               </a>
 
-              {/* App Store Buttons */}
-              <div className="flex gap-3 flex-wrap">
-                <div className="flex items-center gap-2 border border-[#C9A84C]/30 
-                    rounded-lg px-3 py-2 hover:border-[#C9A84C]/70 
-                    transition-colors cursor-pointer group">
-                  <span className="text-lg">🍎</span>
-                  <div>
-                    <p className="font-dmsans text-[9px] text-[#9A8880] 
-                      group-hover:text-[#C9A84C] transition-colors">
-                      Download on the
-                    </p>
-                    <p className="font-cinzel text-[11px] text-[#F5EDE8] leading-none">
-                      App Store
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-2 border border-[#C9A84C]/30 
-                    rounded-lg px-3 py-2 hover:border-[#C9A84C]/70 
-                    transition-colors cursor-pointer group">
-                  <span className="text-lg">▶</span>
-                  <div>
-                    <p className="font-dmsans text-[9px] text-[#9A8880] 
-                      group-hover:text-[#C9A84C] transition-colors">
-                      GET IT ON
-                    </p>
-                    <p className="font-cinzel text-[11px] text-[#F5EDE8] leading-none">
-                      Google Play
-                    </p>
-                  </div>
-                </div>
+              {/* Coming Soon */}
+              <div className="flex items-center gap-2 border border-[#C9A84C]/30 
+                  rounded-lg px-4 py-3">
+                <span className="font-cinzel text-[11px] text-[#C9A84C] tracking-[0.1em] uppercase">
+                  App Launching 27 Jul 2025
+                </span>
               </div>
             </div>
           </div>
