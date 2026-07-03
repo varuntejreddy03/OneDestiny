@@ -85,7 +85,7 @@ export default function Footer() {
               <div className="flex items-center gap-2 border border-[#C9A84C]/30 
                   rounded-lg px-4 py-3">
                 <span className="font-cinzel text-[11px] text-[#C9A84C] tracking-[0.1em] uppercase">
-                  App Launching 27 Jul 2026
+                  Vendor Registration Opens 27 Jul 2026
                 </span>
               </div>
             </div>

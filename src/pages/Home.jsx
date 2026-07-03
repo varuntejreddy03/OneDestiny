@@ -197,11 +197,7 @@ export default function Home() {
               <div className={`flex flex-wrap items-center gap-3 font-dmsans text-[14px] text-gold transition-all delay-[850ms] duration-700 sm:gap-4 ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'}`}>
                 <span className="inline-flex items-center gap-2 rounded-lg border border-gold/30 bg-surface-2/60 px-4 py-2">
                   <CalendarCheck size={16} className="text-gold" />
-                  Launching 27 July 2026
-                </span>
-                <span className="inline-flex items-center gap-2 rounded-lg border border-maroon/40 bg-maroon/10 px-4 py-2">
-                  <Sparkles size={16} className="text-gold" />
-                  Vendor Registration Opens 27 July 2026
+                  Vendor Registration Opens on 27 July 2026
                 </span>
               </div>
             </div>
@@ -326,11 +322,15 @@ export default function Home() {
               Coming Soon
             </span>
             <h2 className="mb-6 font-cormorant text-3xl font-light sm:text-4xl md:text-5xl">
-              Launching 27 July 2026
+              Coming <em className="text-gold">Soon</em>
             </h2>
             <p className="mx-auto mb-8 max-w-lg font-dmsans text-muted sm:mb-10">
               We're building something special. OneDestiny will be available on App Store & Google Play soon.
             </p>
+            <div className="mb-8 flex items-center justify-center gap-2 font-cinzel text-sm uppercase tracking-[0.1em] text-gold">
+              <CalendarCheck size={18} />
+              Vendor Registration Opens on 27 July 2026
+            </div>
             <GoldButton variant="outlined" size="lg" to="/contact">
               Get Notified <ArrowRight size={14} />
             </GoldButton>
