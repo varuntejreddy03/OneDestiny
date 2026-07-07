@@ -81,7 +81,7 @@ export default function Contact() {
       return
     }
 
-    const text = `*New Enquiry from OneDestiny Website*%0A%0A*Name:* ${formData.fullName}%0A*Email:* ${formData.email}%0A*Phone:* ${formData.phone}%0A*Type:* ${formData.messageType}%0A*Message:* ${formData.message}`
+    const text = `*New Enquiry from OneDestiny Website*\n\n*Name:* ${formData.fullName}\n*Email:* ${formData.email}\n*Phone:* ${formData.phone}\n*Type:* ${formData.messageType}\n*Message:* ${formData.message}`
     window.open(`https://wa.me/916302594826?text=${encodeURIComponent(text)}`, '_blank')
 
     setSubmitted(true)
